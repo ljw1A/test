@@ -42,5 +42,6 @@ int main()
     {
         cout << a[i] << " ";
     }
+    cout << "hello world" << endl;
     return 0;
 }
