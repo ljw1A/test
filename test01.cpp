@@ -51,5 +51,30 @@ int main()
     {
         cout << b[i] << " ";
     }
+
+    // ²åÈëÅÅĞò
+    int k;
+    cin >> k;
+    int c[k];
+    for (int i = 0; i < k; i++)
+    {
+        cin >> c[i];
+    }
+    for (int i = 1; i < k; i++)
+    {
+        int key = c[i];
+        int j = i - 1;
+        while (j >= 0 && c[j] > key)
+        {
+            c[j + 1] = c[j];
+            j--;
+        }
+        c[j + 1] = key;
+    }
+    for (int i = 0; i < k; i++)
+    {
+        cout << c[i] << " ";
+    }
+
     return 0;
 }
